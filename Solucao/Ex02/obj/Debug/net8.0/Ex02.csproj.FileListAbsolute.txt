@@ -1,0 +1,15 @@
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\bin\Debug\net8.0\Ex02.exe
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\bin\Debug\net8.0\Ex02.deps.json
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\bin\Debug\net8.0\Ex02.runtimeconfig.json
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\bin\Debug\net8.0\Ex02.dll
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\bin\Debug\net8.0\Ex02.pdb
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\obj\Debug\net8.0\Ex02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\obj\Debug\net8.0\Ex02.AssemblyInfoInputs.cache
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\obj\Debug\net8.0\Ex02.AssemblyInfo.cs
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\obj\Debug\net8.0\Ex02.csproj.CoreCompileInputs.cache
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\obj\Debug\net8.0\Ex02.sourcelink.json
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\obj\Debug\net8.0\Ex02.dll
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\obj\Debug\net8.0\refint\Ex02.dll
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\obj\Debug\net8.0\Ex02.pdb
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\obj\Debug\net8.0\Ex02.genruntimeconfig.cache
+C:\Users\PEDRONUNESMOREIRA\Aula\TopicosSistemas02\Solucao\Ex02\obj\Debug\net8.0\ref\Ex02.dll

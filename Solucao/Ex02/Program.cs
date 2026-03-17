@@ -2,7 +2,6 @@
 int tmnVetor = 100;
 int maxValor = 1000;
 Random random = new Random();
-bool troca = false;
 int[] vetor = new int[tmnVetor];
 
 Console.WriteLine("\nDesordenados:");
@@ -16,22 +15,8 @@ for (int i = 0; i < tmnVetor; i++)
 
 Console.WriteLine("\n");
 
-// Sai do loop apenas se vetor estiver ordenado
-do
-{
-    // Troca os valores se a posição atual do vetor for maior que a posterior
-    troca = false;
-    for (int i = 0; i < tmnVetor; i++)
-    {
-        if (i < tmnVetor - 1 && vetor[i] > vetor[i + 1])
-        {
-            troca = true;
-            int aux = vetor[i];
-            vetor[i] = vetor[i + 1];
-            vetor[i + 1] = aux;
-        }
-    }
-} while (troca);
+Array.Sort(vetor);
+Array.Reverse(vetor);
 
 Console.WriteLine("\nOrdenados:");
 
