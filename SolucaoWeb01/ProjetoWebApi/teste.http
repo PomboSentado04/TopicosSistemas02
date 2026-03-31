@@ -1,0 +1,7 @@
+POST http://localhost:5092/funcionalidade
+
+###
+GET http://localhost:5092/funcionalidade
+
+###
+GET http://localhost:5092
