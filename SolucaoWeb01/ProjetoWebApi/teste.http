@@ -1,7 +1,13 @@
-POST http://localhost:5092/funcionalidade
-
-###
-GET http://localhost:5092/funcionalidade
-
 ###
 GET http://localhost:5092
+
+###
+GET http://localhost:5092/api/produto/listar
+
+###
+POST http://localhost:5092/api/produto/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Geladeira Tsunami"
+}
