@@ -1,21 +1,10 @@
+using Microsoft.AspNetCore.Mvc;
 using ProjetoWebApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-List<Produto> listaDeProdutos = new()
-{
-    new Produto { Nome = "Notebook Gamer" },
-    new Produto { Nome = "Mouse Sem Fio" },
-    new Produto { Nome = "Teclado Mecânico" },
-    new Produto { Nome = "Monitor 4K" },
-    new Produto { Nome = "Headset Bluetooth" },
-    new Produto { Nome = "Webcam HD" },
-    new Produto { Nome = "Cadeira Ergonômica" },
-    new Produto { Nome = "Suporte para Monitor" },
-    new Produto { Nome = "Microfone Condensador" },
-    new Produto { Nome = "SSD 1TB" }
-};
+List<Produto> listaDeProdutos = new List<Produto>();
 
 // Endpoints - Funcionalidades aplicação
 app.MapGet("/", () => "API de Produtos!");
@@ -23,13 +12,32 @@ app.MapGet("/", () => "API de Produtos!");
 // GET: /api/produto/listar
 app.MapGet("/api/produto/listar", () =>
 {
-    return listaDeProdutos;
+    if (listaDeProdutos.Any())
+        return Results.Ok(listaDeProdutos);
+    return Results.NotFound("Lista de produtos vazia!");
 });
 
 // POST: /api/produto/cadastrar
-app.MapPost("/api/produto/cadastrar", (Produto produto) =>
+app.MapPost("/api/produto/cadastrar", ([FromBody] Produto produto) =>
 {
+    foreach (Produto produtoLista in listaDeProdutos)
+    {
+        if (produtoLista.Nome == produto.Nome)
+            return Results.Conflict("Produto já existente.");
+    }
     listaDeProdutos.Add(produto);
+    return Results.Created("", produto);
+});
+
+// GET: /api/produto/buscar/{id}
+app.MapGet("/api/produto/buscar/{id}", ([FromRoute] string id) =>
+{
+    foreach (Produto produtoLista in listaDeProdutos)
+    {
+        if (produtoLista.Id == id)
+            return Results.Ok(produtoLista);
+    }
+    return Results.NotFound("Produto não encontrado.");
 });
 
 // Rodar aplicação

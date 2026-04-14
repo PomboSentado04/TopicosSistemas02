@@ -9,5 +9,9 @@ POST http://localhost:5092/api/produto/cadastrar
 Content-Type: application/json
 
 {
-    "nome": "Geladeira Tsunami"
+    "nome": "Geladeira Bolada",
+    "preco": 16.70
 }
+
+###
+GET http://localhost:5092/api/produto/buscar/
