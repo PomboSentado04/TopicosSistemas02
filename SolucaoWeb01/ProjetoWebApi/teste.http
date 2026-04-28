@@ -10,7 +10,8 @@ Content-Type: application/json
 
 {
     "nome": "Geladeira Bolada",
-    "preco": 16.70
+    "preco": 16.70,
+    "quantidade": 2
 }
 
 ###
