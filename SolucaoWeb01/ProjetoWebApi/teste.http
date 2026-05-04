@@ -1,10 +1,13 @@
-###
+### Base
 GET http://localhost:5092
 
-###
+### Listar Produtos
 GET http://localhost:5092/api/produto/listar
 
-###
+### Mostra Produto
+GET http://localhost:5092/api/produto/buscar/3
+
+### Cadastra Produto
 POST http://localhost:5092/api/produto/cadastrar
 Content-Type: application/json
 
@@ -14,5 +17,15 @@ Content-Type: application/json
     "quantidade": 2
 }
 
-###
-GET http://localhost:5092/api/produto/buscar/
+### Altera Produto
+PUT http://localhost:5092/api/produto/editar/2
+Content-Type: application/json
+
+{
+    "nome": "Geladeira Tsunami",
+    "preco": 14.70,
+    "quantidade": 5000
+}
+
+### Deleta Produto
+DELETE http://localhost:5092/api/produto/deletar/3
